@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TravelBloom</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="IconChangeColor" height="69" width="69"><rect width="256" height="256" fill="none"></rect><path d="M209.5,80.4,175.9,112l32,88-24,24-47.8-70-24.2,22v24l-24,24L73.7,182.1,31.9,168l24-24h24l24-24-72-48,24-24,88,32,31.7-33.5-.7.5a24,24,0,0,1,34,34Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" id="mainIconPathAttribute" filter="url(#shadow)"></path><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter></svg>
+
+          <!-- <img src="assets/logo.png" alt="logo" /> -->
+          <span>TravelBloom</span>
+
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="about.html">About Us</a></li>
+          <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search" id="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter a destination or keyword"
+          />
+          <span><i class="ri-search-line"></i></span>
+          <button class="btn" type="button" onclick="searchRecommendations()">
+            Search
+          </button>
+          <button class="btn" type="button" onclick="clearResults()">
+            Clear
+          </button>
+        </div>
+      </nav>
+      <div class="destination__container">
+        <img class="bg__img__1" src="assets/bg-dots.png" alt="bg" />
+
+        <div class="socials">
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+        <div class="content">
+          <h1>EXPLORE<br />DREAM<br />DESTINATION</span></h1>
+          <p>
+            It encourages exploration of unfamiliar territories, embracing
+            diverse cultures and landscapes, while pursuing the desired
+            destination that captivates the heart and ignites a sense of wonder.
+          </p>
+          <button class="btn">BOOK NOW</button>
+        </div>
+      </div>
+      <div class="destination__flex">
+        <!-- Here we get all out results -->
+        <div id="results"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
